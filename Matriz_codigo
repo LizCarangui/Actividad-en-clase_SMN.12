@@ -1,0 +1,48 @@
+# -----------------------------------------
+# PROGRAMA: REPRESENTACIÓN DE UNA MATRIZ 2x4
+# -----------------------------------------
+# Autor: Alan Roque (adaptado)
+# Descripción: Este programa crea una matriz de 2 filas por 4 columnas,
+# la muestra, recorre sus elementos y modifica un valor específico.
+
+# ---------------------------------------------------------
+# Paso 1: CREAR UNA MATRIZ DE 2 FILAS POR 4 COLUMNAS
+# ---------------------------------------------------------
+matriz = [
+    [7, 14, 9, 5],   # Fila 1
+    [2, 8, 6, 10]    # Fila 2
+]
+
+# ---------------------------------------------------------
+# Paso 2: MOSTRAR LA MATRIZ COMPLETA
+# ---------------------------------------------------------
+print("MATRIZ DE 2 FILAS x 4 COLUMNAS:\n")
+for i, fila in enumerate(matriz):
+    print(f"Fila {i+1}: {fila}")
+
+# ---------------------------------------------------------
+# Paso 3: MOSTRAR ELEMENTOS CON SU POSICIÓN
+# ---------------------------------------------------------
+print("\nElementos de la matriz con su posición (fila, columna):\n")
+for i in range(len(matriz)):
+    for j in range(len(matriz[i])):
+        print(f"Elemento {matriz[i][j]} está en la Fila {i+1}, Columna {j+1}")
+
+# ---------------------------------------------------------
+# Paso 4: MODIFICAR UN ELEMENTO ESPECÍFICO
+# ---------------------------------------------------------
+fila_buscada = 0       # Fila 1
+columna_buscada = 2    # Columna 3
+
+print("\n---------------------------------------------")
+print(f"Elemento original en Fila 1, Columna 3: {matriz[fila_buscada][columna_buscada]}")
+matriz[fila_buscada][columna_buscada] = 20
+print("Elemento modificado a 20")
+print("---------------------------------------------")
+
+# ---------------------------------------------------------
+# Paso 5: MOSTRAR MATRIZ MODIFICADA
+# ---------------------------------------------------------
+print("\nMATRIZ MODIFICADA:\n")
+for i, fila in enumerate(matriz):
+    print(f"Fila {i+1}: {fila}")
